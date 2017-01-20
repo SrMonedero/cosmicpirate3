@@ -264,6 +264,8 @@ GameObject:
   - component: {fileID: 148488721}
   - component: {fileID: 148488720}
   - component: {fileID: 148488722}
+  - component: {fileID: 148488723}
+  - component: {fileID: 148488724}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -330,6 +332,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c8462f64a354d23ad403b7877d15a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &148488723
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148488719}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!61 &148488724
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148488719}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0.08153534}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.8369312}
 --- !u!1 &756367246
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +460,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1546409769}
   - component: {fileID: 1546409768}
+  - component: {fileID: 1546409770}
+  - component: {fileID: 1546409771}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -479,6 +517,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1546409770
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546409767}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.051213074, y: 4.838258}
+  serializedVersion: 2
+  m_Size: {x: 1.157045, y: 0.3847355}
+--- !u!50 &1546409771
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546409767}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
 --- !u!1 &2102246996
 GameObject:
   m_ObjectHideFlags: 0
